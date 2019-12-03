@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('test') {
+    stage('Initialize') {
       steps {
-        sh './gradlew clean test'
+        sh 'ls -al'
       }
     }
 
