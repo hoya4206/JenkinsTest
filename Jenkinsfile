@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Initialize') {
       steps {
-        sh 'chmod +x gradlew'
+        sh 'ls -al'
       }
     }
 
     stage('build') {
       steps {
-        sh './gradlew build'
+        sh 'chmod +x gradlew ./gradlew build'
       }
     }
 
