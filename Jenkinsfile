@@ -21,7 +21,7 @@ pipeline {
 
 url=http://192.168.0.121:6061/upload
 
-curl -v $url -F file0=@/var/jenkins_home/workspace/JenkinsTest_master/app/build/outputs/apk/debug/app-debug.apk -F json="$json" --user username:password'''
+curl -v $url -F file0=@/var/jenkins_home/workspace/JenkinsTest_master/app/build/outputs/apk/debug/app-debug.apk -F json="$json"'''
       }
     }
 
