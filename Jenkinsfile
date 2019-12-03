@@ -17,7 +17,7 @@ pipeline {
     stage('upload') {
       steps {
         sh '''json=\'{"parameter": [{"name": "forceUpdate", "value": true},
-  {"name":"fileParam", "file":"file0"}]}\'
+  {"name":"apk", "file":"file0"}]}\'
 
 url=http://192.168.0.121:6061/upload
 
